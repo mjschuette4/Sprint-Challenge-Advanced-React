@@ -26,6 +26,10 @@ code {
   width: 40px;
 }
 
+.title {
+  text-align: center;
+}
+
 .playerCard {
   display: flex;
   flex-direction: column;

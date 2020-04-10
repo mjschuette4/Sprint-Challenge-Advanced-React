@@ -20,7 +20,7 @@ const NavBar = () => {
                 className={ darkMode ? "toggle toggled" : "toggle"}
                 data-testid="darkToggleButton">Dark Mode</button>
             </div>
-            <h2>Player Cards</h2>
+            <h2 className="title">Player Cards</h2>
         </div>
     )
 }
