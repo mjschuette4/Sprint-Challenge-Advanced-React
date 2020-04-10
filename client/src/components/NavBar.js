@@ -11,13 +11,14 @@ const NavBar = () => {
 
     return (
         <div>
-            <div>
+            <div className="dark-mode-toggle">
                 <div
-                    onClick={toggleDarkMode}
-                    className={ darkMode ? "toggle toggled" : "toggle"}
-                    data-testid="darkToggleButton"
+                    
                 />
-                <h3>Dark Mode</h3>
+                <button
+                onClick={toggleDarkMode}
+                className={ darkMode ? "toggle toggled" : "toggle"}
+                data-testid="darkToggleButton">Dark Mode</button>
             </div>
             <h2>Player Cards</h2>
         </div>
