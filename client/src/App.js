@@ -4,7 +4,7 @@ import NavBar from "./components/NavBar";
 import CardCreator from "./components/CardCreator";
 import './App.css';
 
-export default class App extends React.component {
+export default class App extends React.Component {
   constructor() {
     super()
     this.state = { players: [] }

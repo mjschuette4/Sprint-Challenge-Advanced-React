@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.dark-mode {
+  color: #fff;
+  background-color: #313843;
+}
+
+.dark-mode__toggle {
+  background: papayawhip;
+  border-radius: 50px;
+  border: 1px solid black;
+  height: 20px;
+  position: relative;
+  width: 40px;
+}
+
+.playerCard {
+  display: flex;
+  flex-direction: column;
+  background: beige;
+  margin-bottom: 5%;
+  margin-left: 40%;
+  margin-right: 40%;
+  text-align: center;
+  box-shadow: 3px 3px;
+}
