@@ -1,24 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
+import axios from "axios";
+import NavBar from "./components/NavBar";
+import CardCreator from "./components/CardCreator";
 import './App.css';
 
-class App extends React.component {
-  state={
-    players: [],
-    playerName: [],
-    playerCountry: []
+export default class App extends React.component {
+  constructor() {
+    super()
+    this.state = { players: [] }
   }
 
   componentDidMount() {
-
+    axios
+      .get('http://localhost:5000/api/players')
+      .then(res => {
+        console.log(res)
+        this.setState({...this.state, players: res.data})
+      })
   }
 
   render() {
     return (
       <div>
-        <div>
-          
-        </div>
+        <NavBar />
+          {this.state.players.map( (player) => {
+            return (
+              <CardCreator key={player.id} player={player} />
+            )
+          })}
       </div>
     )
   }
