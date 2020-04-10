@@ -32,5 +32,3 @@ export default class App extends React.component {
     )
   }
 }
-
-export default App;
