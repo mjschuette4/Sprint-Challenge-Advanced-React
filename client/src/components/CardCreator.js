@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function CardCreator(props) {
-
+//setting up format for the cards and what data is in the cards
     if (!props.player) {return null}
     return (
         <div className="playerCard" >
